@@ -12,6 +12,7 @@ public class 띠계산기 {
         String zodiac = calculateZodiac(birthYear);
 
         System.out.println(name + "님의 띠는 " + zodiac + " 띠입니다.");
+        scanner.close();
     }
 
     public static String calculateZodiac(int year) {
@@ -29,7 +30,6 @@ public class 띠계산기 {
       String pig = "🐖";
       String[] zodiacs = {rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, chicken, dog, pig};
       return zodiacs[(year - 1900) % 12];
-  }
-     
+  }     
 }
 
